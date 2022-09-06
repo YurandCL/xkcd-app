@@ -16,12 +16,10 @@ const DefaultHeadTitle = () => {
 
 function MyApp({ Component, pageProps }) {
   return (
-
     <I18NProvider>
       <DefaultHeadTitle />
       <Component {...pageProps} />
     </I18NProvider>
-
   )
 }
 
