@@ -1,17 +1,21 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { useI18N } from 'context/i18n'
 import { Layout } from 'components/Layout'
 
 import { readdir, readFile, stat } from 'fs/promises'
 import { basename } from 'path'
+import { COMIC } from 'constants/paths'
+import { NEXT, PREVIOUS } from 'constants/translations'
 
-export default function Comic({ img, alt, title, width, height, hasPrevious,hasNext,prevId,nextId }) {
+export default function Comic({ img, alt, title, width, height, hasPrevious, hasNext, prevId, nextId }) {
+  const { t } = useI18N()
   return (
     <>
       <Layout>
         <section className="max-w-lg m-auto">
-          <h1 className="mb-4 text-lg font-bold text-center">{title}</h1>
+          <h1 className="mb-4 text-lg font-bold text-gray-300 text-center">{title}</h1>
 
           <div className="max-w-xs m-auto mb-4">
             <Image
@@ -22,17 +26,17 @@ export default function Comic({ img, alt, title, width, height, hasPrevious,hasN
               alt={alt} />
           </div>
 
-          <p>{alt}</p>
+          <p className="text-gray-300">{alt}</p>
 
           <div className="flex justify-between mt-4 font-bold">
             <div>
-              {hasPrevious && <Link href={`/comic/${prevId}`}>
-                <a className="text-gray-600">👈 Previous</a>
+              {hasPrevious && <Link href={`/${COMIC}/${prevId}`}>
+                <a className="text-gray-300">👈 {t(PREVIOUS)}</a>
               </Link>}
             </div>
             <div>
-              {hasNext && <Link href={`/comic/${nextId}`}>
-                <a className="text-gray-600">Next 👉</a>
+              {hasNext && <Link href={`/${COMIC}/${nextId}`}>
+                <a className="text-gray-300">{t(NEXT)} 👉</a>
               </Link>}
             </div>
           </div>

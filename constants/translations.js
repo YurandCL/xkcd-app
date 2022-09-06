@@ -1,3 +1,7 @@
 export const LATEST_COMICS = 'LATEST_COMICS'
 export const SEO_DEFAULT_TITLE = 'SEO_DEFAULT_TITLE'
 export const SEARCH_RESULTS_TITLE = 'SEARCH_RESULTS_TITLE'
+export const SHOW_RESULTS = 'SHOW_RESULTS'
+export const ALL_COMICS_BY_XKCD = 'ALL_COMICS_BY_XKCD'
+export const PREVIOUS = 'PREVIOUS'
+export const NEXT = 'NEXT'
