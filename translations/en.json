@@ -1,5 +1,9 @@
 {
   "LATEST_COMICS": "Latest Comics",
   "SEO_DEFAULT_TITLE": "xkcd - Comics for Developers",
-  "SEARCH_RESULTS_TITLE": "${1} results to ${2}"
+  "SEARCH_RESULTS_TITLE": "${1} results to \"${2}\"",
+  "SHOW_RESULTS": "Show ${1} results",
+  "ALL_COMICS_BY_XKCD": "All comics by xkcd",
+  "PREVIOUS": "Previous",
+  "NEXT": "Next"
 }

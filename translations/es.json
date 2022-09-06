@@ -1,5 +1,9 @@
 {
   "LATEST_COMICS": "Últimos Cómics",
   "SEO_DEFAULT_TITLE": "xkcd - Cómics para Desarrolladores",
-  "SEARCH_RESULTS_TITLE": "${1} resultados para ${2}"
+  "SEARCH_RESULTS_TITLE": "${1} resultados para \"${2}\"",
+  "SHOW_RESULTS": "Ver ${1} resultados",
+  "ALL_COMICS_BY_XKCD": "Todos los cómics por xkcd",
+  "PREVIOUS": "Anterior",
+  "NEXT": "Siguiente"
 }
